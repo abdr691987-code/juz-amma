@@ -1,5 +1,8 @@
 {"config":{
   "reviewCopy": true,
+  "surahRange": [78, 114],
+  "pdfName": "juz-amma.pdf",
+  "appUrl": "https://abdr691987-code.github.io/juz-amma/",
   "audioBase": "https://mirrors.quranicaudio.com/everyayah/Husary_Muallim_128kbps/",
   "fonts": [
     {"family": "KFGQPC Hafs", "file": "UthmanicHafs1Ver18.woff2", "pdfName": "KFGQPCHAFSUthmanicScript-Regula"},
@@ -2728,7 +2731,6 @@
   "subtitle": "معين عائلي على الحفظ",
   "riwaya": "برواية حفص عن عاصم بالرسم العثماني",
   "coverArch": "جزء عمّ",
-  "presentedBy": "تقدمة عبد العزيز الدبس",
   "dedicationTitle": "إهداء",
   "dedication": [
     "هذا العمل صدقة جارية لصاحب الفكرة والتنفيذ، ولكل أحبابنا الذين سبقونا إلى رحمة الله تعالى من شهداء الثورة السورية.",
@@ -2756,6 +2758,7 @@
   "stationLabel": "المحطة",
   "ofWord": "من",
   "surahNumberLabel": "السورة",
+  "qrCaption": "امسح الرمز لتسمع التلاوة",
   "record": {
     "title": "سجل الأسرة",
     "question": "مَن حفظ هذه السورة؟",

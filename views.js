@@ -76,7 +76,7 @@
     const node = screen('map');
     node.appendChild(arch(data.booklet.coverArch));
     node.appendChild(el('h1', 'app-title', data.booklet.title));
-    node.appendChild(el('p', 'presented-by', data.booklet.presentedBy));
+    if (data.booklet.presentedBy) node.appendChild(el('p', 'presented-by', data.booklet.presentedBy));
     node.appendChild(el('p', 'note', t.note));
     const grid = el('div', 'map-grid');
     data.quran.surahs.slice().reverse().forEach((surah) => {
@@ -401,7 +401,7 @@
     const node = screen('about');
     node.appendChild(el('h1', 'app-title', t.title));
     node.appendChild(el('p', 'sadaqa', data.app.sadaqa));
-    node.appendChild(el('p', 'presented-by', data.booklet.presentedBy));
+    if (data.booklet.presentedBy) node.appendChild(el('p', 'presented-by', data.booklet.presentedBy));
     node.appendChild(sectionTitle(data.booklet.dedicationTitle));
     data.booklet.dedication.forEach((line) => node.appendChild(el('p', 'dedication-text', line)));
     node.appendChild(el('p', 'body-text', t.privacy));
