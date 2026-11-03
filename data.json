@@ -1,5 +1,6 @@
 {"config":{
   "reviewCopy": true,
+  "appId": "juz-amma",
   "surahRange": [78, 114],
   "pdfName": "juz-amma.pdf",
   "appUrl": "https://abdr691987-code.github.io/juz-amma/",

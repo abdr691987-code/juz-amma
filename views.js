@@ -57,6 +57,15 @@
     return node;
   }
 
+  // Memorizing starts from the last surah of the juz, so it is station one.
+  function stationOf(data, number) {
+    return data.config.surahRange[1] + 1 - number;
+  }
+
+  function surahCount(data) {
+    return data.config.surahRange[1] - data.config.surahRange[0] + 1;
+  }
+
   function surahName(data, surah) {
     return data.booklet.surahNameFixes[String(surah.number)] || surah.name;
   }
@@ -84,7 +93,7 @@
       station.setAttribute('class', 'station');
       station.setAttribute('data-s', String(surah.number));
       station.setAttribute('href', '#/surah/' + surah.number);
-      station.appendChild(starIcon(115 - surah.number));
+      station.appendChild(starIcon(stationOf(data, surah.number)));
       station.appendChild(el('span', 'station-name', surahName(data, surah)));
       const saved = el('span', 'station-saved', t.saved);
       saved.hidden = true;
@@ -153,7 +162,7 @@
     const name = data.booklet.surahWord + ' ' + surahName(data, surah);
     node.appendChild(arch(name));
     const meta = el('div', 'surah-meta');
-    meta.appendChild(el('span', '', data.booklet.stationLabel + ' ' + digits(115 - number) + ' ' + data.booklet.ofWord + ' ' + digits(37)));
+    meta.appendChild(el('span', '', data.booklet.stationLabel + ' ' + digits(stationOf(data, number)) + ' ' + data.booklet.ofWord + ' ' + digits(surahCount(data))));
     meta.appendChild(el('span', '', data.booklet.surahNumberLabel + ' ' + digits(number)));
     node.appendChild(meta);
 
@@ -433,7 +442,7 @@
     const number = surahMatch ? Number(surahMatch[1]) : 0;
     let view;
     let current = 'map';
-    if (number >= 78 && number <= 114) {
+    if (number >= data.config.surahRange[0] && number <= data.config.surahRange[1]) {
       view = renderSurah(data, number);
       current = '';
       if (ctx.store) ctx.store.setLastSurah(number);
