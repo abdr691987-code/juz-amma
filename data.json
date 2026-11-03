@@ -3,7 +3,7 @@
   "surahRange": [78, 114],
   "pdfName": "juz-amma.pdf",
   "appUrl": "https://abdr691987-code.github.io/juz-amma/",
-  "audioBase": "https://mirrors.quranicaudio.com/everyayah/Husary_Muallim_128kbps/",
+  "audioBase": "https://mirrors.quranicaudio.com/everyayah/Ayman_Sowaid_64kbps/",
   "fonts": [
     {"family": "KFGQPC Hafs", "file": "UthmanicHafs1Ver18.woff2", "pdfName": "KFGQPCHAFSUthmanicScript-Regula"},
     {"family": "Amiri", "file": "Amiri-Regular.ttf", "pdfName": "Amiri-Regular"},
@@ -2828,14 +2828,14 @@
     ],
     "sourcesTitle": "المصادر",
     "sources": [
-      "القارئ: الشيخ محمود خليل الحصري رحمه الله، التلاوة التعليمية برواية حفص عن عاصم.",
+      "القارئ: الشيخ أيمن رشدي سويد، برواية حفص عن عاصم.",
       "النص: برواية حفص من quran.com، وقد قوبل بنص alquran.cloud.",
       "الصوت: mirrors.quranicaudio.com.",
       "الخط: خط مجمع الملك فهد."
     ],
     "privacy": "لا يجمع التطبيق أي بيانات عنك، ولا يرسل الأسماء ولا السجل إلى أي مكان. واتصاله الوحيد بالإنترنت لتنزيل التلاوة.",
     "downloadTitle": "الاستماع بلا إنترنت",
-    "downloadNote": "تُحفظ تلاوة السورة كلها على الجهاز عند أول استماع إليها. ولتنزيل تلاوة الجزء كله مرة واحدة، نحو 84 ميغابايت، اضغط الزر وأنت متصل بالإنترنت.",
+    "downloadNote": "تُحفظ تلاوة السورة كلها على الجهاز عند أول استماع إليها. ولتنزيل تلاوة الجزء كله مرة واحدة، نحو 34 ميغابايت، اضغط الزر وأنت متصل بالإنترنت.",
     "downloadButton": "نزّل تلاوة الجزء كاملاً",
     "downloadProgress": "جارٍ التنزيل:",
     "downloadDone": "تم تنزيل التلاوة كاملة.",

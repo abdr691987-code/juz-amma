@@ -76,6 +76,7 @@
     isIosBrowser,
   });
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
+  audioStore.prune().catch(() => {});
 
   const fontsOk = await fontsLoaded();
   App.route(location.hash);

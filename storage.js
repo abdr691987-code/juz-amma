@@ -145,6 +145,25 @@
         return fetched.blob;
       },
 
+      // Recitation saved from another reciter is never played again, so its space is given back.
+      async prune() {
+        const cache = await openCache();
+        if (!cache || !cache.keys) return 0;
+        let removed = 0;
+        try {
+          for (const request of await cache.keys()) {
+            const url = typeof request === 'string' ? request : request.url;
+            if (!url.startsWith(audioBase)) {
+              await cache.delete(request);
+              removed += 1;
+            }
+          }
+        } catch (error) {
+          // Leaving old files in place is harmless.
+        }
+        return removed;
+      },
+
       async missing(items) {
         const cache = await openCache();
         const gaps = [];
